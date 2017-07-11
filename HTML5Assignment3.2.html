@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+	Create a webpage:
+	 In your HOME page, create a div box and set your large content inside a div. Use the scrollable overflow property for your larger content.
+	 Add the background image on your web page.Create a fixed navigation bar with ul list as the HOME, ABOUT, CONTACT page.
+	 Anchor the link to an individual page. When a user clicks the ABOUT page, it should route to that page.
+	-->
+	<title>HTML5 Assignment3.2</title>
+	<style type="text/css">
+		body{
+			
+			background: url("bgImage.jpg");
+			color: white;
+		}
+		#lrg{
+			position: relative;
+			margin-left: 150px;
+			overflow: scroll;
+			width: 1200px;
+			height: 280px;
+		}
+		#menu{
+			position: fixed;
+			margin-left: 20Px;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="menu">
+			<ul style=" a">
+				<li><a href="#">HOME</a></li>
+				<li><a href="About.html">ABOUT</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+		</div>
+	<div id="lrg">
+		<h1>Web Development</h1>
+		<h2>Dummy Content to show only overflow behavior.</h2>
+		<content>
+		<p>
+			Anybody with just basic knowledge of HTML and CSS can start using Bootstrap
+			: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops
+			: In Bootstrap 3, mobile-first styles are part of the core framework
+			: Bootstrap is compatible with all modern browsers (Chrome, Firefox, Internet Explorer, Safari, and Opera)
+			— All Bootstrap components share the same design templates and styles through a central library, so that the designs and layouts of your web pages are consistent throughout your development.
+		</p>
+		<p>
+			Static positioned elements are not affected by the top, bottom, left, and right properties.
+			An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
+
+			An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+			A "positioned" element is one whose position is anything except static.
+
+			Because the image has a z-index of -1, it will be placed behind the text
+		</p>	
+		</content>	
+	</div>
+</body>
+</html>
